@@ -1,5 +1,5 @@
 import React from 'react';
-import URL from './URL';
+import URL from '../../URL';
 
 const UserPost = () => {
     const [username, setUsername] = React.useState('');
