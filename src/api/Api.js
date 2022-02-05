@@ -13,7 +13,7 @@ const Api = () => {
       <h2>PHOTO POST</h2>
       <PhotoPost/>
       <h2>PHOTO GET</h2>
-      <PhotoGet/>
+      <PhotoGet/> 
   </div>;
 };
 
