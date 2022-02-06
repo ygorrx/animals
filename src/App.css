@@ -67,7 +67,7 @@ a{
   height: 1.875rem;
   position: absolute;
   bottom: 15px;
-  left: 130px;
+  left: -15px;
   z-index: -1;
 
 }
