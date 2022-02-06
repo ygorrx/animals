@@ -23,7 +23,7 @@
 .nav button:hover,
 .nav button:focus{
     background: #102542;
-    box-shadow: 0 0 0 3px #FCB8B1;
+    box-shadow: 0 0 0 1px #FCB8B1;
     border-color: #F97162;
     outline: none;
 }
@@ -35,6 +35,6 @@
 
 .nav a.active{
     background: #102542;
-    box-shadow: 0 0 0 3px #FCB8B1;
+    box-shadow: 0 0 0 1px #FCB8B1;
     border-color: #F97162;
 }
