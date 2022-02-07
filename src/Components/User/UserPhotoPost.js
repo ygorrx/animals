@@ -1,7 +1,48 @@
 import React from 'react';
+import { PHOTO_POST } from '../../api';
+import useFetch from '../../Hooks/useFetch';
+import useForm from '../../Hooks/useForm';
+import Button from '../Forms/Button';
+import Input from '../Forms/Input';
+import styles from './UserPhotoPost.module.css'
 
 const UserPhotoPost = () => {
-  return <div>Postar foto</div>;
+  const nome = useForm();
+  const peso = useForm();
+  const idade = useForm();
+  const [img, setImg] = React.useState({});
+  const {data, error, loading, request} = useFetch();
+  
+  function handleSubmit(event){
+    event.preventDefault();
+    const formData = new FormData();
+      formData.append('img', img.raw);
+      formData.append('nome', nome.value);
+      formData.append('peso', peso.value);
+      formData.append('idade', idade.value);
+      console.log(formData);
+  
+      const token = window.localStorage.getItem('token');
+      const {url, options} = PHOTO_POST(formData, token);
+      request(url, options);
+     
+  }
+  
+  function handleImgChange({target}){
+    setImg({
+      raw: target.files[0],
+    });
+  };
+  
+  return <section className={`${styles.photoPost} animeLeft`}>
+    <form onSubmit={handleSubmit}>
+      <Input label='Nome Popular' type='text' name='nome'{...nome}/>
+      <Input label='Peso' type='text' name='peso'{...peso}/>
+      <Input label='Idade' type='text' name='idade'{...idade} />
+      <input type='file' name='img' id='img' onChange={handleImgChange} />
+      <Button>Enviar</Button>
+</form>
+    </section>;
 };
 
 export default UserPhotoPost;

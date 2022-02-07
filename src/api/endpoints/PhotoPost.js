@@ -42,7 +42,7 @@ function handleSubmit(event){
         type="text"
         placeholder="Token"
         value={token}
-        onChange={({ target }) => setToken(target.value)}
+        onChange={(target) => setToken(target.value)}
         />
         <input
         type="text"
