@@ -1,12 +1,14 @@
 import React from 'react';
 import { COMMENT_POST } from '../../api';
-import {ReactComponent as Enviar} from '../../Assets/comments.svg'
+import { ReactComponent as BotaoEnviar } from '../../Assets/comments.svg'
+import { ReactComponent as BotaoEnviando } from '../../Assets/comments-loading.svg'
 import useFetch from '../../Hooks/useFetch'
 import Error from '../Helper/Error'
+import styles from './PhotoCommentsForm.module.css'
 
 const PhotoCommentsForm = ({id, setComments}) => {
 
-const {request, error} = useFetch() 
+const {request, error, loading} = useFetch() 
 const [comment, setComment] = React.useState('');
 
 async function handleSubmit(event){
@@ -19,16 +21,16 @@ async function handleSubmit(event){
     }
 }
 
-  return <form onSubmit={handleSubmit}>
+  return <form onSubmit={handleSubmit} className={styles.form}>
       <textarea
+      className={styles.textarea}
       id='comment'
       name='comment' 
       placeholder='Deixe seu comentário...'
       value={comment} 
       onChange={({target}) => setComment(target.value)}/>
-      <button>
-          <Enviar/>
-      </button>
+      {loading ? <button className={styles.buttonLoading}><BotaoEnviando/></button> : <button className={styles.button}><BotaoEnviar/></button>}
+          
       <Error error={error}/>
   </form>;
 };
