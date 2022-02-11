@@ -12,6 +12,11 @@
     animation: slit-in-vertical 0.2s ease-out both;
 }
 
+.single.photo {
+    grid-template-columns: 1fr;
+    height: auto;
+}
+
   @keyframes slit-in-vertical {
     0% {
       transform: translateZ(-800px) rotateY(90deg);
@@ -31,9 +36,21 @@
     padding: 2rem 2rem 0 2rem;
 }
 
+.single .details{
+    padding: 2rem 0px 0px 0px;
+    margin: 0 2rem;
+}
+
 .img{
     grid-row: 1/4;
 }
+
+.single .img{
+    grid-row: 1;
+    border-radius: .2rem;
+    overflow: hidden;
+}
+
 
 .comments{
     padding: 0 2rem;
