@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Animals" />
+  <img src="../screenshots/print.png" alt="myPetz" />
 
   &#xa0;
 
@@ -9,13 +9,13 @@
 <h1 align="center">myPetz</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{ygorrx}}/animals?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/ygorrx/animals?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/{{ygorrx}}/animals?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/ygorrx/animals?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/{{ygorrx}}/animals?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/ygorrx/animals?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/{{ygorrx}}/animals?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/ygorrx/animals?color=56BEB8">
 
   <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/animals?color=56BEB8" /> -->
 
@@ -91,7 +91,7 @@ $ npm start
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 
-Made with :heart: by <a href="https://github.com/{{ygorrx}}" target="_blank">{{Ygor Oliveira}}</a>
+Made with :heart: by <a href="https://github.com/{{ygorrx}}" target="_blank">Ygor Oliveira</a>
 
 &#xa0;
 
