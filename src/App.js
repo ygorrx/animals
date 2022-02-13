@@ -13,10 +13,11 @@ import UserProfile from './Components/User/UserProfile';
 import NotFound from './Components/NotFound';
 
 const App = () => {
-  return <div>
+  return <div className='App'>
     <BrowserRouter>
     <UserStorage>
       <Header/>
+      <main className='Appbody'>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='login/*' element={<Login/>} />
@@ -27,6 +28,7 @@ const App = () => {
             <Route exact path='/conta/*' element={<User/>}/>
           </Route>
       </Routes>
+      </main>
       <Footer/>
     </UserStorage>
     </BrowserRouter>
