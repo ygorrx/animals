@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="../screenshots/print.png" alt="myPetz" />
+  <img src="https://i.imgur.com/1O60nZz.png" alt="myPetz" />
 
   &#xa0;
 
