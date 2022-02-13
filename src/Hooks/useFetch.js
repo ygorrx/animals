@@ -13,9 +13,7 @@ const request = React.useCallback(async (url, options) => {
         setError(null);
         setLoading(true);
         response = await fetch(url, options)
-        console.log(response)
         json = await response.json();
-        console.log(json)
         if(response.ok === false) throw new Error(json.message)
     } catch(err){
         json = null;

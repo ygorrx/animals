@@ -22,12 +22,15 @@ React.useEffect(() => {
   if(error) return <Error error={error}/>
   if(data)
   return (
-    <React.Suspense>
+    <div>
      <Head title="Estatísticas" />
      <UserStatsGraphs data={data}/>
-    </React.Suspense>
+    </div>
     );
-    else return null;
+    else return  <div>
+    <Head title="Estatísticas" />
+    <p>Você ainda não tem fotos postadas.</p>
+   </div>;
   };  
 
 export default UserStats;

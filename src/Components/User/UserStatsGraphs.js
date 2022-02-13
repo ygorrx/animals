@@ -17,9 +17,11 @@ React.useEffect(() => {
         }
     })
 
-    setTotal(data.map(({acessos}) => Number(acessos)).reduce((a, b) => a + b));
+    setTotal(data.map(({acessos}) => Number(acessos)).reduce((a, b) => a + b, 0));
     setGraph(graphdata);
 }, [data])
+
+    
 
   return (
     <section className={`${styles.graph} animeLeft`}>
