@@ -9,6 +9,10 @@ const types = {
         regex: /^(?!.*\s)(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[~`!@#$%^&*()--+={}\]|\\:;"'<>,.?/_₹]).{8,16}$/,
         message: "A senha deve ter pelo menos 1 caracter minúsculo, 1 caracter maiúsculo, 1 número e 1 caracte especial."
     },
+    number: {
+        regex: /^\d+$/,
+        message: "Utilize números apenas."
+    },
 }
 
 const useForm = (type) => {
