@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css'
 import Footer from './Components/Footer';
 import Header from './Components/Header';
@@ -14,7 +14,7 @@ import NotFound from './Components/NotFound';
 
 const App = () => {
   return <div className='App'>
-    <BrowserRouter>
+    <HashRouter>
     <UserStorage>
       <Header/>
       <main className='Appbody'>
@@ -31,7 +31,7 @@ const App = () => {
       </main>
       <Footer/>
     </UserStorage>
-    </BrowserRouter>
+    </HashRouter>
   </div>;
 };
 
